@@ -13,6 +13,7 @@ int main(int argc, char** argv) {
 
     if(argc >1)
     {
+        cout<< "The length of the name of program is: " << string_length(argv[1])<< endl;
         cout<< "The length of the first parameter is: " << string_length(argv[1]) << endl;
     }
 
