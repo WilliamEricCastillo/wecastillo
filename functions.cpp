@@ -1,6 +1,6 @@
 /*********************
 Name: William Castillo
-COSC-2436-003
+Coding 01
 Purpose: This program is a command line analyzer that displays the number of command line parameters,
 the string length of the program's name, and the string length of each parameter.
 **********************/
@@ -9,12 +9,11 @@ the string length of the program's name, and the string length of each parameter
 
 int string_length(const char *str){
 
-    int count = 0;
+    int i = 0;
 
-    for( int i = 0; i < str[i]; ++i)
+    while(str[i] != '\0')
     {
-        count += 1;
+        i++;
     }
-
-    return count;
+    return i;
 }
