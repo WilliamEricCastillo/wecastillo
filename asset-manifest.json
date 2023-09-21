@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wecastillo/static/css/main.36dc82b1.css",
-    "main.js": "/wecastillo/static/js/main.9a2988dd.js",
+    "main.css": "/wecastillo/static/css/main.162fc7c7.css",
+    "main.js": "/wecastillo/static/js/main.1c7af858.js",
     "static/js/787.f8a0dea2.chunk.js": "/wecastillo/static/js/787.f8a0dea2.chunk.js",
     "static/media/brand-icons.svg": "/wecastillo/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/wecastillo/static/media/icons.62d9dae4e0040e81c980.svg",
@@ -36,12 +36,12 @@
     "static/media/github-mark.svg": "/wecastillo/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/wecastillo/index.html",
     "static/media/hamburger.svg": "/wecastillo/static/media/hamburger.c643de8f31b6b849ec0c3bc7e3c52bcf.svg",
-    "main.36dc82b1.css.map": "/wecastillo/static/css/main.36dc82b1.css.map",
-    "main.9a2988dd.js.map": "/wecastillo/static/js/main.9a2988dd.js.map",
+    "main.162fc7c7.css.map": "/wecastillo/static/css/main.162fc7c7.css.map",
+    "main.1c7af858.js.map": "/wecastillo/static/js/main.1c7af858.js.map",
     "787.f8a0dea2.chunk.js.map": "/wecastillo/static/js/787.f8a0dea2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36dc82b1.css",
-    "static/js/main.9a2988dd.js"
+    "static/css/main.162fc7c7.css",
+    "static/js/main.1c7af858.js"
   ]
 }
