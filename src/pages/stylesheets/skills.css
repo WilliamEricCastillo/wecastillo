@@ -1,0 +1,39 @@
+.grid-skills{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    padding-bottom: 3em;
+    padding-top: 1em;
+
+    border: 3px solid transparent;
+    border-image: linear-gradient(
+            to bottom right,
+            teal 0%,
+            mediumvioletred 25%,
+            steelblue 50%,
+            darkblue 75%,
+            #fd1892 100%
+    );
+    border-image-slice: 1;
+
+}
+
+.grid-skills > * {
+    flex:1 1 20em;
+}
+
+.icon-container {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

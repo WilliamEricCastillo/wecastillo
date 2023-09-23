@@ -1,0 +1,27 @@
+/* Default styles for all screen sizes */
+.grid-projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-basis: 100%;
+    max-width: 63em;
+
+    padding: 4px 4px 4px 4px;
+    background-color: black;
+    border: 3px solid transparent;
+    border-image: linear-gradient(
+            to bottom right,
+            teal 0%,
+            mediumvioletred 25%,
+            steelblue 50%,
+            darkblue 75%,
+            #fd1892 100%
+    );
+    border-image-slice: 1;
+}
+
+.grid-projects>*{
+    flex: 1 1 20em;
+}
+
+

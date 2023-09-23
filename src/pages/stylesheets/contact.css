@@ -1,0 +1,36 @@
+
+Form {
+    width: 30em;
+    background-color: black;
+    border: 3px solid transparent;
+    border-image: linear-gradient(
+            to bottom right,
+            teal 0%,
+            mediumvioletred 25%,
+            steelblue 50%,
+            darkblue 75%,
+            #fd1892 100%
+    );
+    border-image-slice: 1;
+}
+
+label {
+    color: white !important;
+}
+
+.custom-button {
+    background-color: #0A66C2 !important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+}
+
+

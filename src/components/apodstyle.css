@@ -1,0 +1,33 @@
+.apod-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.apod-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.apod-container h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.apod-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Center the loading text while fetching data */
+.apod-container.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}

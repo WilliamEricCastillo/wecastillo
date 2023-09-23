@@ -1,0 +1,55 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: #000000;
+  background-image: url('plain-black-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.name-grid{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  justify-content: center;
+
+}
+.birth-name{
+  padding-right: 20px;
+}
+.nametitle,.name-grid {
+  text-transform: uppercase;
+  font-family: verdana, serif;
+  font-size: 4em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 0.33px 0.33px 0.33px #919191;
+}
+
+#project-title, #skills-title, #contact-title{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.grid-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10em;
+}
+
+.app-col{
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
