@@ -40,16 +40,17 @@
 }
 
 #gradpic{
-    transform: scale(.5);
     border-radius: 100%;
-    margin-top: -13em;
-    margin-bottom: -13em;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #gradpic:hover{
-    transform: scale(.51);
+    transform: scale(1.1);
 
 }
+
 .grid-home > * {
     flex: 1 1 3em;
 }

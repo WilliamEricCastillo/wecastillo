@@ -5,11 +5,14 @@ import CardTemplate03 from "../components/CardTemplate03";
 import CardTemplate04 from "../components/CardTemplate04";
 import CardTemplate05 from "../components/CardTemplate05";
 import CardTemplate06 from "../components/CardTemplate06";
+import React from "react";
 
 function Projects(){
 
     return(
         <>
+            <p id="project-title">Projects</p>
+
             <div className="grid-projects" >
                 <div className="projects-col"><CardTemplate/></div>
                 <div className="projects-col"><CardTemplate02/></div>

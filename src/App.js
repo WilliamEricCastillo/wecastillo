@@ -1,12 +1,14 @@
 import React, { useRef } from "react";
+import ReactGA from 'react-ga';
+import "./App.css";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-import "./App.css";
-import "./components/navbar.css";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+ReactGA.initialize('G-1CW04CVSEM');
+ReactGA.pageview('/wecastillo');
 
 
 function App() {
@@ -53,21 +55,18 @@ function App() {
 
                     <div className="app-col">
                         <div ref={skills} className="skills">
-                            <p id="skills-title">Skills</p>
                             <Skills/>
                         </div>
                     </div>
 
                     <div className="app-col">
                         <div ref={projects} className="projects">
-                            <p id="project-title">Projects</p>
                             <Projects/>
                         </div>
                     </div>
 
                     <div className="app-col">
                         <div ref={contact} className="contact">
-                            <p id="contact-title">Contact</p>
                             <Contact/>
                         </div>
                     </div>

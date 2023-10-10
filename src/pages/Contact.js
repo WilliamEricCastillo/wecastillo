@@ -33,6 +33,7 @@ function Contact(){
 
     return(
         <>
+            <p id="contact-title">Contact</p>
             <div className="grid-contact">
                 <Form className="custom-form" onSubmit={handleOnSubmit}>
                     <Form.Field

@@ -1,10 +1,15 @@
 .navbar {
+    top:0;
+    left: 0;
     height: 60px;
     width: 99.5%;
-    background-color: #000000;
-    position: fixed;
     z-index: 1000;
-    border-bottom: 3px solid transparent;
+
+    position: fixed;
+
+    background-color: #000000;
+    background-clip: padding-box;
+
     border-image: linear-gradient(
             to bottom right,
             teal 0%,
@@ -13,92 +18,39 @@
             darkblue 75%,
             #fd1892 100%);
     border-image-slice: 1;
-    background-clip: padding-box;
+    border-bottom: 3px solid transparent;
 }
 
 .container {
-    max-width: 95%;
-    display: flex;
-    height: 100%;
-}
-
-.left-side {
-    margin-left: -20px;
     display: flex;
     align-items: center;
-    flex-grow: 1;
 }
 
-.socials {
-    margin-right: -50px;
-
+.container> * {
+    flex: 0 0 47%;
 }
 
-.socials a:hover svg {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+.logo {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    margin-left: 2em;
+    height: 60px;
+}
+
+.menu-icon {
+    display: none;
 }
 
 .nav-elements {
-    flex-grow: 0;
-}
-
-#github {
-    transform: scale(0.4);
-    padding-right: 30px;
-    fill: white;
-}
-
-#github svg path {
-    fill: white;
-}
-
-#linkedin{
-    transform: scale(0.30);
-}
-
-#linkedin svg path {
-    fill: #0A66C2;
-}
-
-#Resume{
-    transform: scale(0.3);
-}
-
-#email{
-    padding-left: 40px;
-}
-
-.link{
-    font-weight: 700;
-    font-size: large;
-    cursor: pointer;
-    background:
-            linear-gradient(
-                    to right,
-                    rgba(0, 0, 0, 0),
-                    rgba(0, 0, 0, 0)
-            ),
-            linear-gradient(
-                    to right,
-                    rgba(255, 0, 0, 1),
-                    rgba(255, 0, 180, 1),
-                    rgba(0, 100, 200, 1)
-            );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-
-.link:hover {
-    background-size: 0 3px, 100% 3px;
-    transform: scale(1.1);
+    height: 60px;
 }
 
 .nav-elements ul {
     display: flex;
     list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .nav-elements ul li:not(:last-child) {
@@ -128,11 +80,51 @@
     background-color: #574c4c;
 }
 
+.socials a:hover svg {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.link{
+    font-weight: 700;
+    font-size: large;
+    cursor: pointer;
+    background:
+            linear-gradient(
+                    to right,
+                    rgba(0, 0, 0, 0),
+                    rgba(0, 0, 0, 0)
+            ),
+            linear-gradient(
+                    to right,
+                    rgba(255, 0, 0, 1),
+                    rgba(255, 0, 180, 1),
+                    rgba(0, 100, 200, 1)
+            );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.link:hover {
+    background-size: 0 3px, 100% 3px;
+    transform: scale(1.1);
+}
 
 
 @media (max-width: 768px) {
     .nav-elements ul li:not(:last-child) {
         margin-right: 30px;
+    }
+    .container> * {
+        flex: 0 0 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -140,8 +132,16 @@
     .menu-icon {
         display: block;
         cursor: pointer;
-        -webkit-filter: invert(1);
-        filter: invert(1);
+    }
+
+    .container> * {
+        flex: 0 0 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .nav-elements {
@@ -162,15 +162,14 @@
     .nav-elements ul {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-elements ul li {
+        margin-right: unset;
         margin-top: 22px;
     }
 }
-
-
-
 
 /* scroll to top button */
 .top-btn-position {
@@ -195,4 +194,3 @@
     color: #fff;
     border: 2px solid #fff;
 }
-

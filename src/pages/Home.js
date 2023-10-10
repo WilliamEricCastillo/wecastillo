@@ -26,7 +26,7 @@ function Home(){
                         <p className="introduction">
                             I'm a recent Computer Science graduate from Texas State University with a strong foundation in programming languages, including C++ and Python, along with practical experience in MongoDB, MySQL, and Oracle databases.
                             I am passionate about joining a collaborative team to create impactful software solutions.
-                            My technical skills encompass languages such as C++, Python, Java, HTML/CSS, and JavaScript, as well as proficiency in Linux, Git/GitHub, React, and various databases.
+                            My technical skills encompass languages such as C++, Python, Java, HTML, CSS, and JavaScript, as well as proficiency in Linux, Git, GitHub, and React.
                             I am proud to have been named to the Dean's List for the Spring 2023 semester, reflecting my commitment to academic excellence.
                             Thank you for visiting, and I look forward to sharing my professional journey and future endeavors with you.
                         </p>

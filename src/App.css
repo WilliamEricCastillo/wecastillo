@@ -14,11 +14,12 @@ body {
   flex-wrap: wrap;
   padding-left: 20px;
   justify-content: center;
-
 }
+
 .birth-name{
   padding-right: 20px;
 }
+
 .nametitle,.name-grid {
   text-transform: uppercase;
   font-family: verdana, serif;
@@ -26,11 +27,6 @@ body {
   font-weight: 700;
   color: #f5f5f5;
   text-shadow: 0.33px 0.33px 0.33px #919191;
-}
-
-#project-title, #skills-title, #contact-title{
-  font-size: 50px;
-  font-weight: bold;
 }
 
 .grid-app {
@@ -44,7 +40,6 @@ body {
   margin-bottom: 10em;
   text-align: center;
 }
-
 
 
 

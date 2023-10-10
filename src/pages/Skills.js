@@ -9,12 +9,15 @@ import { ReactComponent as NODEJS } from "../icons/nodejs.svg";
 import { ReactComponent as ORACLE } from "../icons/oracle.svg";
 import { ReactComponent as PYTHON } from "../icons/python.svg";
 import { ReactComponent as REACT } from "../icons/react.svg";
+import React from "react";
 
 
 function Skills(){
 
     return(
         <>
+            <p id="skills-title">Skills</p>
+
             <div className="grid-skills">
                 <div className="col">
                     <div className="icon-container">

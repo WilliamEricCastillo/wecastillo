@@ -1,4 +1,9 @@
 
+#contact-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
 Form {
     width: 30em;
     background-color: black;
@@ -32,5 +37,3 @@ label {
 .custom-button:hover {
     background-color: #45a049;
 }
-
-
