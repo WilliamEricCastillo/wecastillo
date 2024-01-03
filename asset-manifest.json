@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wecastillo/static/css/main.23fb36c9.css",
+    "main.css": "/wecastillo/static/css/main.21fae236.css",
     "main.js": "/wecastillo/static/js/main.af39ad93.js",
     "static/js/787.f8a0dea2.chunk.js": "/wecastillo/static/js/787.f8a0dea2.chunk.js",
     "static/media/brand-icons.svg": "/wecastillo/static/media/brand-icons.6729d29753e000c17489.svg",
@@ -39,12 +39,12 @@
     "index.html": "/wecastillo/index.html",
     "static/media/hamburger.svg": "/wecastillo/static/media/hamburger.3669f421c2e82ede2ee3172f0b450273.svg",
     "static/media/javascript.svg": "/wecastillo/static/media/javascript.43976d9fce9148457a6eef9bf7cb28d1.svg",
-    "main.23fb36c9.css.map": "/wecastillo/static/css/main.23fb36c9.css.map",
+    "main.21fae236.css.map": "/wecastillo/static/css/main.21fae236.css.map",
     "main.af39ad93.js.map": "/wecastillo/static/js/main.af39ad93.js.map",
     "787.f8a0dea2.chunk.js.map": "/wecastillo/static/js/787.f8a0dea2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23fb36c9.css",
+    "static/css/main.21fae236.css",
     "static/js/main.af39ad93.js"
   ]
 }
