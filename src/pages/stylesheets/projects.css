@@ -1,5 +1,4 @@
-
-#project-title{
+#project-title {
     font-size: 50px;
     font-weight: bold;
 }
@@ -8,8 +7,11 @@
     display: flex;
     flex-wrap: wrap;
 
-    flex-basis: 100%;
-    max-width: 64em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 76em;
 
     padding: 4px 4px 4px 4px;
     background-color: black;
@@ -25,11 +27,9 @@
     border-image-slice: 1;
 }
 
-.grid-projects>*{
-    flex: 1 1 20em;
-}
 
-.projects-col{
+
+.projects-col {
     border: 1px solid black;
     align-content: space-between;
 }

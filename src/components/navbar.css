@@ -9,7 +9,10 @@
 
     background-color: #000000;
     background-clip: padding-box;
-
+    background-image: url('../StarfieldSimulation.gif'); /* Adjust the path based on your project structure */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-image: linear-gradient(
             to bottom right,
             teal 0%,
@@ -194,3 +197,5 @@
     color: #fff;
     border: 2px solid #fff;
 }
+
+

@@ -1,0 +1,23 @@
+#about-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about-text{
+    color: white;
+}
+
+#about-section {
+    position: relative;
+    background-color: white;
+    background-image: url('/src/neon-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    padding-bottom: 4em;
+    margin-top: auto;
+}
+
+
+

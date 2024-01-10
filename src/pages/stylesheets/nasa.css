@@ -1,5 +1,10 @@
 
-.grid-home {
+#nasa-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#nasa-container{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -27,31 +32,7 @@
     padding-right:2em;
 }
 
-.introduction {
-    font-size: 17px;
+#api-text{
+    font-style: italic;
+    color: #0A66C2;
 }
-
-/*#school-title{*/
-/*    margin-bottom: 1em;*/
-/*}*/
-
-#job-title{
-    margin-top: 2em;
-}
-
-#gradpic{
-    border-radius: 100%;
-    width: 360px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/*#gradpic:hover{*/
-/*    transform: scale(1.1);*/
-/*}*/
-
-.grid-home > * {
-    flex: 1 1 3em;
-}
-
-

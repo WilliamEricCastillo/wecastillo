@@ -4,6 +4,8 @@ import { ReactComponent as Github } from "./github-mark.svg";
 import { ReactComponent as Linkedin } from "./linkedin.svg";
 import { ReactComponent as Resume } from "./resume-icon.svg";
 import { ReactComponent as Envelope } from "./email.svg";
+
+
 import './navbar.css'
 
 const Navbar = ({ scrollToSection }) => {
@@ -15,8 +17,11 @@ const Navbar = ({ scrollToSection }) => {
 
     return (
         <nav className="navbar">
+
             <div className="container">
+
                 <div className="logo">
+
                     <div className="socials" id="github">
                         <a href="https://github.com/WilliamEricCastillo?tab=repositories"
                            title="Github"
@@ -27,7 +32,7 @@ const Navbar = ({ scrollToSection }) => {
                     </div>
 
                     <div className="socials" id="linkedin">
-                        <a href="https://www.linkedin.com/in/williamericcastillo/"
+                        <a href="https://www.linkedin.com/in/williamecastillo/"
                            title="Linkedin"
                            target="_blank"
                            rel="noopener noreferrer">
@@ -36,7 +41,7 @@ const Navbar = ({ scrollToSection }) => {
                     </div>
 
                     <div className="socials" id="Resume">
-                        <a href="https://drive.google.com/file/d/166AQG3Fmi0e7Nvww0-A7gTKRdjgN7Acu/view"
+                        <a href="https://docs.google.com/document/d/13-kOm3dyOPNBZ3FI1ioMLuBrUgIsUcJt/edit?usp=sharing&ouid=108401301805898358230&rtpof=true&sd=true"
                            title="View Resume"
                            target="_blank"
                            rel="noopener noreferrer">
@@ -55,6 +60,7 @@ const Navbar = ({ scrollToSection }) => {
                 <div className="menu-icon" onClick={handleShowNavbar}>
                     <Hamburger/>
                 </div>
+
                 <div className={`nav-elements  ${showNavbar && 'active'}`}>
                     <ul>
                         <li><div onClick={() => scrollToSection("home")} className="link">Home</div></li>
@@ -65,6 +71,7 @@ const Navbar = ({ scrollToSection }) => {
                 </div>
             </div>
         </nav>
+
     )
 }
 

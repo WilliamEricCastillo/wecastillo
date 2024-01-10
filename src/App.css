@@ -12,7 +12,6 @@ body {
 .name-grid{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px;
   justify-content: center;
 }
 
@@ -37,10 +36,9 @@ body {
 }
 
 .app-col{
-  margin-bottom: 10em;
+  margin-bottom: 5em;
   text-align: center;
 }
-
 
 
 

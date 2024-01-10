@@ -9,6 +9,10 @@ import { ReactComponent as NODEJS } from "../icons/nodejs.svg";
 import { ReactComponent as ORACLE } from "../icons/oracle.svg";
 import { ReactComponent as PYTHON } from "../icons/python.svg";
 import { ReactComponent as REACT } from "../icons/react.svg";
+import { ReactComponent as REST } from "../icons/restapi.svg";
+import { ReactComponent as SQL } from "../icons/SQL.svg";
+import { ReactComponent as JAVASCRIPT } from "../icons/javascript.svg";
+
 import React from "react";
 
 
@@ -51,6 +55,12 @@ function Skills(){
                 </div>
                 <div className="col">
                     <div className="icon-container">
+                        <JAVASCRIPT />
+                        <span className="label">Javascript</span>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="icon-container">
                         <MYSQL />
                         <span className="label">MySQL</span>
                     </div>
@@ -77,6 +87,18 @@ function Skills(){
                     <div className="icon-container">
                         <REACT />
                         <span className="label">React</span>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="icon-container">
+                        <REST />
+                        <span className="label">REST API</span>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="icon-container">
+                        <SQL />
+                        <span className="label">SQL</span>
                     </div>
                 </div>
             </div>
