@@ -16,9 +16,10 @@ function CardTemplate() {
                 title="GOL"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" color="text.primary" sx={{ borderBottom: '2px solid black' }}> {/* Add solid line under the title */}
+                    Conway's Game of Life
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.primary">
                     Java application simulating Conway's Game of Life using multi-thread.
                     The applications has a scalable grid system with a configurable number of rows and columns and
                     uses an input file the initialize the simulation grid.
@@ -26,7 +27,8 @@ function CardTemplate() {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button variant="outlined" size="small"><a href="https://github.com/WilliamEricCastillo/Multi-Threaded-GOL" target="_blank" rel="noopener noreferrer">Code</a></Button>
+                <Button variant="contained" size="small" sx={{ backgroundColor: '#316FF6' }}>
+                    <a href="https://github.com/WilliamEricCastillo/Multi-Threaded-GOL" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>Code</a></Button>
             </CardActions>
         </Card>
     );

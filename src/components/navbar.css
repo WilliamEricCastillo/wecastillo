@@ -131,7 +131,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 95em) {
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -151,15 +151,20 @@
         position: absolute;
         right: 0;
         top: 60px;
-        background-color: #000000;
+        background-color: rgba(0,0,0,0.8);
         width: 0px;
         height: calc(100vh - 60px);
         transition: all 0.3s ease-in;
         overflow: hidden;
+        color: pink;
+        text-transform: uppercase;
+        justify-content: center;
+        font-family: verdana, serif;
     }
 
     .nav-elements.active {
-        width: 270px;
+        width: 175px;
+        height: 400px;
     }
 
     .nav-elements ul {
@@ -171,6 +176,7 @@
     .nav-elements ul li {
         margin-right: unset;
         margin-top: 22px;
+        margin-left: 22px;
     }
 }
 

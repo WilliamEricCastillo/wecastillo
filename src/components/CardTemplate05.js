@@ -16,15 +16,18 @@ function CardTemplate() {
                 title="cipher"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" color="text.primary" sx={{ borderBottom: '2px solid black' }}> {/* Add solid line under the title */}
+                    Cryptography: Hands-On
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.primary">
                     Python applications showcasing the practical implementation/principles behind three cryptographic methods: Diffie-Hellman, Caesar cipher, and Hill cipher.
                     Applications are provided in Jupyter Notebook format.
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button variant="outlined" size="small"><a href="https://github.com/WilliamEricCastillo/ComputerSystemSecurity" target="_blank" rel="noopener noreferrer">Code</a></Button>
+                <Button variant="contained" size="small" sx={{ backgroundColor: '#316FF6' }}>
+                    <a href="https://github.com/WilliamEricCastillo/ComputerSystemSecurity" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>Code</a>
+                </Button>
             </CardActions>
         </Card>
     );

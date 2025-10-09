@@ -5,12 +5,9 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-
-    flex-grow: 1; /* Grow equally with siblings */
-    flex-basis: 100%; /* Initial width, adjust as needed */
-    max-width: 50em; /* Responsive max-width */
-
-    /*background: black;*/
+    flex-grow: 1;
+    flex-basis: 100%;
+    max-width: 50em;
     border: 3px solid transparent;
     border-image: linear-gradient(
             to bottom right,
@@ -31,27 +28,36 @@
     font-size: 17px;
 }
 
-/*#school-title{*/
-/*    margin-bottom: 1em;*/
-/*}*/
-
 #job-title{
     margin-top: 2em;
 }
 
 #gradpic{
-    border-radius: 100%;
-    width: 360px;
+    border-radius: 75%;
+    width: 300px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
-
-/*#gradpic:hover{*/
-/*    transform: scale(1.1);*/
-/*}*/
 
 .grid-home > * {
     flex: 1 1 3em;
 }
 
+.col h1 {
+    margin-bottom: 0.1em;
+}
+
+.col h4 {
+    margin-top: 0.1em;
+}
+
+.dashed-line {
+    border-top: 2px dashed white;
+    width: 100%;
+    height: 0;
+}
+
+.app-col{
+    margin-bottom: 5em;
+    text-align: center;
+}
 

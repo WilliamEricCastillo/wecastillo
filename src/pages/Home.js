@@ -4,40 +4,45 @@ function Home(){
 
     return(
         <>
+
             <div className="grid-home">
 
-                {/*<div className="col" id="job-title">*/}
-                {/*    <h1>Software / Web Development</h1>*/}
-                {/*</div>*/}
+                <div className="col">
+
+                    <img id="gradpic" src="https://i.ibb.co/yY62RjG/Cropped-Image.png" alt="grad"></img>
+                    <h1>Masters of Science in Information Science</h1>
+                    <h4>Texas A&M International University '25</h4>
+                    <h1>Bachelor's of Arts in Computer Science</h1>
+                    <h4>Texas State University '23</h4>
+
+                </div>
+
+                <div className="dashed-line"></div>
 
                 <div className="col">
-                    <h1>Web Developer</h1>
+                    <p className="introduction">
+                        <strong>Computer Science</strong> graduate specializing in <strong>front and back-end
+                        development</strong>.
+                        In addition, I have experience in <strong>database design</strong>, skills in developing <strong>RESTful APIs</strong>,
+                        expertise in <strong>Express</strong>, and proficiency in <strong>React</strong>.
+                        <br></br>
+                        <br></br>
+                       Currently pursuing a <strong>M.S. in Information Science</strong>, where I'm learning
+                        a wide spectrum of IT and business topics, including <strong>project management</strong>
+                        and <strong>business analytics</strong>.
+                        Upon the completion of my degree, I will be earning a <strong>certificate</strong> in <strong>data analytics</strong>,
+                        enhancing my capabilities to manipulate data and develop
+                        data-intensive applications.
+                        <br></br>
+                        <br></br>
+                        Lastly, I am proud to have been named to the <strong>Dean's List</strong> for the Spring 2023 semester, reflecting my
+                        commitment to academic excellence.
+                        <br></br>
+                        <br></br>
+                        Thank you for visiting, and I look forward to sharing my professional journey and future
+                        endeavors with you.
+                    </p>
                 </div>
-
-
-                <div className="col">
-                    <img id="gradpic" src="https://i.ibb.co/5sJm11H/clearoff.jpg" alt="grad"></img>
-                </div>
-
-                <div className="col" id="school-title">
-                    <h1>Texas State University '23</h1>
-                </div>
-
-                    <div className="col">
-                        <p className="introduction">
-                            I'm a Computer Science graduate from Texas State University, specializing in front and back-end development.
-                            Currently pursuing an M.S. in Information Science at Texas A&M International University.
-                            <br></br>
-                            <br></br>
-                            Alongside my programming expertise, I have practical experience in database design and management. Furthermore, I have additional skills in developing RESTful APIs, expertise in Express, and proficiency in React.
-                            <br></br>
-                            <br></br>
-                            I am proud to have been named to the Dean's List for the Spring 2023 semester, reflecting my commitment to academic excellence. I am passionate about applying my diverse skills and contribute to innovative solutions within a collaborative team environment.
-                            <br></br>
-                            <br></br>
-                            Thank you for visiting, and I look forward to sharing my professional journey and future endeavors with you.
-                        </p>
-                    </div>
 
             </div>
         </>

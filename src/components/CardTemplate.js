@@ -5,30 +5,32 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import "./card.css";
 
-export default function CardTemplate() {
+
+function CardTemplate() {
     return (
         <Card sx={{ maxWidth: 345, backgroundColor: '#F5F5F5' }}>
             <CardMedia
                 sx={{ height: 140 }}
-                image= "https://i.ibb.co/XJB7cVn/craniumcon.jpg"
-                title="Cranium Conscious"
+                image="https://i.ibb.co/XJB7cVn/craniumcon.jpg"
+                title="Movie Genre Classifier"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" color="text.primary" sx={{ borderBottom: '2px solid black' }}> {/* Add solid line under the title */}
+                    Mental Wellness Platform
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.primary">
                     Cranium Conscious is a human interactive website,
                     that involved user feedback to refine features,
-                    such as a weekly mood tracker and curated media.
-                    Front-end development using HTML5, CSS, and Javascript.
+                    such as a weekly mood tracker, journal, and curated poetry/quotes.
+                    Utilized HTML5, CSS, Javascript, flask, and postgres.
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button variant="outlined" size="small"><a href="https://craniumc.fly.dev/" target="_blank" rel="noopener noreferrer">Demo</a></Button>
-                <Button variant="outlined" size="small"><a href="https://github.com/WilliamEricCastillo/craniumconscious" target="_blank" rel="noopener noreferrer">Code</a></Button>
+                <Button variant="contained" size="small" sx={{ backgroundColor: '#316FF6' }}>
+                    <a href="https://github.com/WilliamEricCastillo/craniumconscious" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>Code</a></Button>
             </CardActions>
         </Card>
     );
 }
+export default CardTemplate;

@@ -16,16 +16,19 @@ function CardTemplate() {
                 title="Craps"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" color="text.primary" sx={{ borderBottom: '2px solid black' }}> {/* Add solid line under the title */}
+                    Craps Simulator
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.primary">
                     C++ application that simulates a craps dice game.
                     This application encompasses the fundamental phases and rules of the game.
                     Object-oriented programming principles were employed to build modular code.
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button variant="outlined" size="small"><a href="https://github.com/WilliamEricCastillo/CrapsSimulator" target="_blank" rel="noopener noreferrer">Code</a></Button>
+                <Button variant="contained" size="small" sx={{ backgroundColor: '#316FF6' }}>
+                <a href="https://github.com/WilliamEricCastillo/CrapsSimulator" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>Code</a>
+                </Button>
             </CardActions>
         </Card>
     );

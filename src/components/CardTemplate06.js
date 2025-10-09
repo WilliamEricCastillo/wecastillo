@@ -12,19 +12,21 @@ function CardTemplate() {
         <Card sx={{ maxWidth: 345, backgroundColor: '#F5F5F5' }}>
             <CardMedia
                 sx={{ height: 140 }}
-                image="https://repository-images.githubusercontent.com/232512685/70107a80-31f8-11ea-9436-66c4dc25c0e2"
-                title="Restful"
+                image="https://as2.ftcdn.net/v2/jpg/02/18/32/79/1000_F_218327950_XpwmdXNS8ZjdtWjopLHwQ5Ig9ibzxFOK.jpg"
+                title="Movie Genre Classifier"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" color="text.primary" sx={{ borderBottom: '2px solid black' }}> {/* Add solid line under the title */}
+                    Book Tracking Application
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                     RESTful API for managing a collection of books.
-                    It facilitates operations like retrieving a list of books, fetching book details by ID, adding new books, updating existing book information, and deleting books.
-                </Typography>
+                <Typography variant="body2" color="text.primary">
+                    MERN (MongoDB, Express.js, React, Node.js) application for managing and monitoring library book activities.
+                    Express server has tailored routes and HTTP methods for tasks like listing, checking in/out, and providing JSON responses.                 </Typography>
             </CardContent>
             <CardActions>
-                <Button variant="outlined" size="small"><a href="https://github.com/WilliamEricCastillo/RestExpress" target="_blank" rel="noopener noreferrer">Code</a></Button>
+                <Button variant="contained" size="small" sx={{ backgroundColor: '#316FF6' }}>
+                    <a href="https://github.com/WilliamEricCastillo/Library-Book-Tracking-Application" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>Code</a>
+                </Button>
             </CardActions>
         </Card>
     );

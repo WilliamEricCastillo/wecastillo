@@ -12,6 +12,7 @@ import { ReactComponent as REACT } from "../icons/react.svg";
 import { ReactComponent as REST } from "../icons/restapi.svg";
 import { ReactComponent as SQL } from "../icons/SQL.svg";
 import { ReactComponent as JAVASCRIPT } from "../icons/javascript.svg";
+import { ReactComponent as ANGULAR } from "../icons/Angular.svg";
 
 import React from "react";
 
@@ -25,80 +26,86 @@ function Skills(){
             <div className="grid-skills">
                 <div className="col">
                     <div className="icon-container">
-                        <Cplusplus />
+                        <Cplusplus/>
                         <span className="label">C++</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <CSS />
+                        <CSS/>
                         <span className="label">CSS</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <GIT />
+                        <GIT/>
                         <span className="label">Git</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <GITGIT />
+                        <GITGIT/>
                         <span className="label">Github</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <HTML5 />
+                        <HTML5/>
                         <span className="label">HTML5</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <JAVASCRIPT />
+                        <JAVASCRIPT/>
                         <span className="label">Javascript</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <MYSQL />
+                        <MYSQL/>
                         <span className="label">MySQL</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <NODEJS />
+                        <NODEJS/>
                         <span className="label">Node.js</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <ORACLE />
+                        <ORACLE/>
                         <span className="label">Database</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <PYTHON />
+                        <PYTHON/>
                         <span className="label">Python</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <REACT />
+                        <REACT/>
                         <span className="label">React</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <REST />
+                        <REST/>
                         <span className="label">REST API</span>
                     </div>
                 </div>
                 <div className="col">
                     <div className="icon-container">
-                        <SQL />
+                        <SQL/>
                         <span className="label">SQL</span>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="icon-container">
+                        <ANGULAR/>
+                        <span className="label">Angular</span>
                     </div>
                 </div>
             </div>

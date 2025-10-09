@@ -7,16 +7,13 @@
 .grid-skills{
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 75em; /* Responsive max-width */
-
+    max-width: 75em;
     gap: 1em;
     padding-bottom: 2em;
     padding-top: 1em;
-
     border: 3px solid transparent;
     border-image: linear-gradient(
             to bottom right,
@@ -27,7 +24,6 @@
             #fd1892 100%
     );
     border-image-slice: 1;
-
 }
 
 .grid-skills > * {

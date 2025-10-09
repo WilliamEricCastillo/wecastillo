@@ -1,18 +1,16 @@
 #project-title {
     font-size: 50px;
     font-weight: bold;
+
 }
 
 .grid-projects {
     display: flex;
     flex-wrap: wrap;
-
     text-align: center;
     align-items: center;
     justify-content: center;
-
     max-width: 76em;
-
     padding: 4px 4px 4px 4px;
     background-color: black;
     border: 3px solid transparent;
@@ -26,8 +24,6 @@
     );
     border-image-slice: 1;
 }
-
-
 
 .projects-col {
     border: 1px solid black;

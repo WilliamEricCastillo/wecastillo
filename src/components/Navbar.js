@@ -63,10 +63,28 @@ const Navbar = ({ scrollToSection }) => {
 
                 <div className={`nav-elements  ${showNavbar && 'active'}`}>
                     <ul>
-                        <li><div onClick={() => scrollToSection("home")} className="link">Home</div></li>
-                        <li><div onClick={() => scrollToSection("skills")} className="link">Skills</div></li>
-                        <li><div onClick={() => scrollToSection("projects")} className="link">Projects</div></li>
-                        <li><div onClick={() => scrollToSection("contact")} className="link">Contact</div></li>
+                        <li>
+                            <div onClick={() => scrollToSection("home")} className="link">Home</div>
+                        </li>
+                        <li>
+                            <div onClick={() => scrollToSection("skills")} className="link">Skills</div>
+                        </li>
+                        <li>
+                            <div onClick={() => scrollToSection("projects")} className="link">Projects</div>
+                        </li>
+                        <li>
+                            <div onClick={() => scrollToSection("experience")} className="link">Experience</div>
+                        </li>
+                        <li>
+                            <div onClick={() => scrollToSection("nasa")} className="link">Nasa</div>
+                        </li>
+
+                        <li>
+                            <div onClick={() => scrollToSection("contact")} className="link">Contact</div>
+                        </li>
+                        <li>
+                            <div onClick={() => scrollToSection("about")} className="link">About</div>
+                        </li>
                     </ul>
                 </div>
             </div>

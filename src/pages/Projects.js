@@ -13,13 +13,14 @@ function Projects(){
         <>
             <p id="project-title">Projects</p>
 
-            <div className="grid-projects" >
-                <div className="projects-col"><CardTemplate/></div>
+            <div className="grid-projects">
                 <div className="projects-col"><CardTemplate02/></div>
                 <div className="projects-col"><CardTemplate06/></div>
+                <div className="projects-col"><CardTemplate/></div>
+                <div className="projects-col"><CardTemplate05/></div>
                 <div className="projects-col"><CardTemplate03/></div>
                 <div className="projects-col"><CardTemplate04/></div>
-                <div className="projects-col"><CardTemplate05/></div>
+
             </div>
         </>
     );
