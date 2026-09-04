@@ -1,89 +1,262 @@
-#experience-title{
-    font-size: 50px;
-    font-weight: bold;
-
-}
-
-.experience-container {
-    display: flex;
-    max-width: 65em;
-    height: 50vh;
+.section-title-frame {
+    position: relative;
+    display: inline-block;
+    padding: 0.3em 1.6em;
     margin: 0 auto;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-y: auto;
-    border: 3px solid transparent;
-    border-image: linear-gradient(
-            to bottom right,
-            teal 0%,
-            mediumvioletred 25%,
-            steelblue 50%,
-            darkblue 75%,
-            #fd1892 100%
-    );
-    border-image-slice: 1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    padding: 0em 2em;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);}
-
-.experience-container::-webkit-scrollbar-track {
-    background-color: white;
+    border-radius: 4px;
+    background: rgba(10, 12, 16, 0.5);
 }
 
-.experience-container::-webkit-scrollbar-thumb {
-    background-color: #808283;
-    border-radius: 10px;
-    border: 3px solid black;
+.section-title {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #f5f5f7;
 }
 
-.experience-container::-webkit-scrollbar {
-    width: 12px;
+.section-underline {
+    width: 90px;
+    height: 3px;
+    margin: 0.6em auto 0.5em;
+    border-radius: 2px;
+    background: linear-gradient(to right, #22d3ee, #ec4899);
 }
 
-.experience-container::-webkit-scrollbar-button {
-    display: block;
-    height: 10px;
-    background-color: white;
+.section-subtitle {
+    max-width: 32em;
+    margin: 0 auto 2em;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95em;
 }
 
-.experience-block {
-    text-align: left;
+.experience-card {
+    position: relative;
     width: 100%;
-    margin-bottom: 2em;
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 2.5em 2.75em 2em;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(16, 18, 24, 0.92), rgba(6, 7, 10, 0.96));
+    border: 1px solid rgba(140, 160, 180, 0.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+}
+
+.experience-timeline {
+    position: relative;
+    max-height: 65vh;
+    overflow-y: auto;
+    padding-right: 0.5em;
+}
+
+.experience-timeline::-webkit-scrollbar {
+    width: 8px;
+}
+
+.experience-timeline::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.experience-timeline::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #22d3ee, #ec4899);
+    border-radius: 8px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0.4em;
+    bottom: 0.4em;
+    left: calc(170px + 1.5em + 15px);
+    width: 2px;
+    background: linear-gradient(to bottom, #22d3ee, #a855f7, #ec4899);
+    opacity: 0.45;
+}
+
+.experience-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 170px 32px 1fr;
+    column-gap: 1.5em;
+    padding: 1.4em 0.5em 1.4em 0;
+    text-align: left;
+}
+
+.experience-row + .experience-row {
+    border-top: 1px dashed rgba(236, 72, 153, 0.2);
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6em;
+}
+
+.meta-date {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.meta-location {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.meta-pin {
+    flex-shrink: 0;
+}
+
+.type-badge {
+    display: inline-block;
+    padding: 0.2em 0.8em;
+    border-radius: 999px;
+    font-size: 0.75em;
+    font-weight: 600;
+    border: 1px solid currentColor;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.timeline-col {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.3em;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 0 0 10px currentColor;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.block-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.block-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid currentColor;
 }
 
 .title-company {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .job-title {
-    font-size: 1.5em;
-    margin-right: 1em;
+    margin: 0 0 0.15em;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #f5f5f7;
 }
 
 .company-name {
-    font-size: 1.2em;
-    color: #666;
-    flex-grow: 1;
-}
-
-.experience-details {
-    font-style: italic;
-    color: #666;
+    margin: 0;
+    font-size: 0.95em;
+    font-weight: 600;
 }
 
 ul {
-    padding: 0;
-    list-style-position: inside;
-    font-size: 1.2em;
+    margin: 0;
+    padding-left: 1.2em;
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 li {
     text-align: left;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
+    line-height: 1.5;
+}
+
+.accent-cyan {
+    color: #22d3ee;
+}
+
+.accent-purple {
+    color: #a855f7;
+}
+
+.accent-pink {
+    color: #ec4899;
+}
+
+.experience-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 1.5em;
+    padding-top: 1.2em;
+    border-top: 1px dashed rgba(140, 160, 180, 0.2);
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.experience-footer p {
+    margin: 0;
+}
+
+.footer-tag {
+    color: #22d3ee;
+    font-family: monospace;
+}
+
+@media (max-width: 800px) {
+    .experience-row {
+        grid-template-columns: 1fr;
+        row-gap: 0.8em;
+        padding: 1.2em 0;
+    }
+
+    .timeline-line,
+    .timeline-col {
+        display: none;
+    }
+
+    .experience-meta {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 2em 1.2em;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+        letter-spacing: 0.15em;
+    }
+
+    .block-header {
+        flex-wrap: wrap;
+    }
 }

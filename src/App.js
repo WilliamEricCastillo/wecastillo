@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
+// import Projects from "./pages/Projects"; // Projects section temporarily hidden
 import Contact from "./pages/Contact";
 import NASA from "./pages/NASA";
 import About from "./pages/About";
@@ -71,10 +71,16 @@ function App() {
             <div className="grid-app">
 
                 <div className="app-col">
-                    <div className="name-grid">
-                        <div className="birth-name"><p>William</p></div>
-                        <div className="birth-name"><p>Eric</p></div>
-                        <div className="birth-name"><p>Castillo</p></div>
+                    <div className="intro-name-frame">
+                        <span className="corner-bracket corner-tl"></span>
+                        <span className="corner-bracket corner-tr"></span>
+                        <span className="corner-bracket corner-bl"></span>
+                        <span className="corner-bracket corner-br"></span>
+                        <div className="name-grid">
+                            <div className="birth-name"><p>William</p></div>
+                            <div className="birth-name"><p>Eric</p></div>
+                            <div className="birth-name"><p>Castillo</p></div>
+                        </div>
                     </div>
                 </div>
 
@@ -97,11 +103,13 @@ function App() {
                     </div>
                 </div>
 
+                {/* Projects section temporarily hidden
                 <div className="app-col">
                     <div ref={projects} className="projects">
                         <Projects/>
                     </div>
                 </div>
+                */}
 
                 <div className="app-col">
                     <div ref={nasa} className="nasa">

@@ -21,13 +21,16 @@ const NASAImageOfTheDay = () => {
     }, [apiUrl]); // Include apiUrl in the dependency array
 
     return (
-        <div>
+        <div className="apod-card">
             {imageData && (
-                <div>
-                    <h1 id="pod-title">{imageData.title}</h1>
-                    <img src={imageData.url} alt={imageData.title} style={{ maxWidth: '100%' }} />
-                    <p id="discription-pod">{imageData.explanation}</p>
-                </div>
+                <>
+                    <h1 className="apod-title">{imageData.title}</h1>
+                    <p className="apod-date">{imageData.date}</p>
+                    <div className="apod-media">
+                        <img src={imageData.url} alt={imageData.title} className="apod-image" />
+                    </div>
+                    <p className="apod-description">{imageData.explanation}</p>
+                </>
             )}
         </div>
     );

@@ -1,7 +1,59 @@
-#pod-title{
-    padding-top: 1em;
+.apod-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+    width: 100%;
+    text-align: left;
 }
 
-#discription-pod{
-    padding-top: 1em;
+.apod-title {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #f5f5f7;
+}
+
+.apod-date {
+    margin: 0;
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #67e8f9;
+}
+
+.apod-media {
+    align-self: center;
+    max-width: 100%;
+    padding: 4px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #22d3ee 0%, #a855f7 50%, #ec4899 100%);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.apod-media:hover {
+    box-shadow: 0 0 28px rgba(236, 72, 153, 0.35);
+    transform: translateY(-2px);
+}
+
+.apod-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 11px;
+    background: #0a0a0d;
+}
+
+.apod-description {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 700px) {
+    .apod-title {
+        font-size: 1.2em;
+    }
 }

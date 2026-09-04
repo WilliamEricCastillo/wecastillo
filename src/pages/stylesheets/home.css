@@ -1,63 +1,151 @@
 
-.grid-home {
+.home-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    gap: 1.9em;
+    width: 100%;
+    max-width: 50em;
+    padding: 2.5em 2.75em 2.25em;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(16, 18, 24, 0.92), rgba(6, 7, 10, 0.96));
+    border: 1px solid rgba(140, 160, 180, 0.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+}
+
+.home-top {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.photo-frame {
+    flex-shrink: 0;
+    display: inline-flex;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, #22d3ee 0%, #a855f7 55%, #ec4899 100%);
+    box-shadow: 0 0 16px rgba(168, 85, 247, 0.3);
+}
+
+#gradpic {
+    display: block;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0a0a0d;
+}
+
+.education {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+    text-align: left;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.edu-icon {
+    flex-shrink: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
-    flex-basis: 100%;
-    max-width: 50em;
-    border: 3px solid transparent;
-    border-image: linear-gradient(
-            to bottom right,
-            teal 0%,
-            mediumvioletred 25%,
-            steelblue 50%,
-            darkblue 75%,
-            #fd1892 100%
-    );
-    border-image-slice: 1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    padding-bottom: 2em;
-    padding-left:2em;
-    padding-right:2em;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    font-size: 1.25em;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.edu-icon-cyan {
+    color: #22d3ee;
+    border: 1px solid rgba(34, 211, 238, 0.35);
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.2);
+}
+
+.edu-icon-pink {
+    color: #ec4899;
+    border: 1px solid rgba(236, 72, 153, 0.35);
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.2);
+}
+
+.edu-title {
+    margin: 0 0 0.2em;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.edu-subtitle {
+    margin: 0;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.edu-cyan {
+    color: #67e8f9;
+}
+
+.edu-pink {
+    color: #f472b6;
+}
+
+.edu-divider {
+    width: 100%;
+    height: 0;
+    border-top: 1px dashed rgba(236, 72, 153, 0.3);
+}
+
+.home-divider {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, #22d3ee, #a855f7, #ec4899);
+    opacity: 0.5;
+}
+
+.home-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
 }
 
 .introduction {
-    font-size: 17px;
-}
-
-#job-title{
-    margin-top: 2em;
-}
-
-#gradpic{
-    border-radius: 75%;
-    width: 300px;
-    margin-top: 10px;
-}
-
-.grid-home > * {
-    flex: 1 1 3em;
-}
-
-.col h1 {
-    margin-bottom: 0.1em;
-}
-
-.col h4 {
-    margin-top: 0.1em;
-}
-
-.dashed-line {
-    border-top: 2px dashed white;
-    width: 100%;
-    height: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .app-col{
     margin-bottom: 5em;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    .home-card {
+        padding: 2em 1.4em;
+    }
+
+    .home-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education {
+        text-align: center;
+    }
+
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 

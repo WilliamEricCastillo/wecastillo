@@ -1,26 +1,46 @@
 import "./stylesheets/home.css"
 import React from "react";
+import { FaGraduationCap, FaBookOpen } from "react-icons/fa";
 function Home(){
 
     return(
         <>
 
-            <div className="grid-home">
+            <div className="home-card">
+                <span className="corner-bracket corner-tl"></span>
+                <span className="corner-bracket corner-tr"></span>
+                <span className="corner-bracket corner-bl"></span>
+                <span className="corner-bracket corner-br"></span>
 
-                <div className="col">
+                <div className="home-top">
+                    <div className="photo-frame">
+                        <img id="gradpic" src="https://i.ibb.co/VpkhhpGg/photo-output-2.jpg" alt="grad"></img>
+                    </div>
 
-                    <img id="gradpic" src="https://i.ibb.co/VpkhhpGg/photo-output-2.jpg" alt="grad"></img>
-                    <h1>Bachelor of Computer Science</h1>
-                    <h4>Texas State University '23</h4>
-                    <h1>Master of Information Science</h1>
-                    <h4>Texas A&M International University '25</h4>
+                    <div className="education">
+                        <div className="education-item">
+                            <span className="edu-icon edu-icon-cyan"><FaGraduationCap/></span>
+                            <div>
+                                <h3 className="edu-title">Bachelor of Computer Science</h3>
+                                <h4 className="edu-subtitle edu-cyan">Texas State University '23</h4>
+                            </div>
+                        </div>
 
+                        <div className="edu-divider"></div>
 
+                        <div className="education-item">
+                            <span className="edu-icon edu-icon-pink"><FaBookOpen/></span>
+                            <div>
+                                <h3 className="edu-title">Master of Information Science</h3>
+                                <h4 className="edu-subtitle edu-pink">Texas A&M International University '25</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="dashed-line"></div>
+                <div className="home-divider"></div>
 
-                <div className="col">
+                <div className="home-bio">
                     <p className="introduction">
                         I have a Bachelor’s degree in Computer Science and a Master’s degree in Information Science,
                         with a strong foundation in front-end and back-end development and experience in the electric
@@ -34,8 +54,6 @@ function Home(){
                         Oracle DB, and Power BI, with experience building data-driven applications and interactive dashboards.
                     </p>
                 </div>
-
-
             </div>
 
         </>

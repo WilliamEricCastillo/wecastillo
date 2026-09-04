@@ -22,111 +22,126 @@ function Skills(){
 
     return(
         <>
-            <p id="skills-title">Skills</p>
-
-            <div className="grid-skills">
-                {/* Frameworks */}
-                <div className="col">
-                    <div className="icon-container">
-                        <ANGULAR/>
-                        <span className="label">Angular</span>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="icon-container">
-                        <REACT/>
-                        <span className="label">React</span>
-                    </div>
-                </div>
-
-                <div className="col">
-                    <div className="icon-container">
-                        <ORACLE/>
-                        <span className="label">Database</span>
-                    </div>
-                </div>
-
-                <div className="col">
-                    <div className="icon-container">
-                        <SQL/>
-                        <span className="label">SQL</span>
-                    </div>
-                </div>
-
-                {/* Development / Deployment Tools */}
-                <div className="col">
-                    <div className="icon-container">
-                        <MAVEN/>
-                        <span className="label">Maven</span>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="icon-container">
-                        <TOMCAT/>
-                        <span className="label">Tomcat</span>
-                    </div>
-                </div>
-
-                {/* Front-end languages */}
-                <div className="col">
-                    <div className="icon-container">
-                        <HTML5/>
-                        <span className="label">HTML5</span>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="icon-container">
-                        <CSS/>
-                        <span className="label">CSS</span>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="icon-container">
-                        <JAVASCRIPT/>
-                        <span className="label">Javascript</span>
-                    </div>
-                </div>
-
-                {/* Backend / Databases / APIs */}
-                <div className="col">
-                    <div className="icon-container">
-                        <PYTHON/>
-                        <span className="label">Python</span>
-                    </div>
-                </div>
-
-                {/* Optional: C++ */}
-                <div className="col">
-                    <div className="icon-container">
-                        <Cplusplus/>
-                        <span className="label">C++</span>
-                    </div>
-                </div>
-
-                <div className="col">
-                    <div className="icon-container">
-                        <REST/>
-                        <span className="label">REST API</span>
-                    </div>
-                </div>
-
-
-                {/* Version Control */}
-                <div className="col">
-                    <div className="icon-container">
-                        <GIT/>
-                        <span className="label">Git</span>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="icon-container">
-                        <GITGIT/>
-                        <span className="label">Github</span>
-                    </div>
-                </div>
-
+            <div className="section-title-frame">
+                <span className="corner-bracket corner-tl"></span>
+                <span className="corner-bracket corner-tr"></span>
+                <span className="corner-bracket corner-bl"></span>
+                <span className="corner-bracket corner-br"></span>
+                <h2 className="section-title">Skills</h2>
             </div>
+            <div className="section-underline"></div>
+            <p className="section-subtitle">Technologies and tools I use to build powerful, scalable, and efficient solutions.</p>
 
+            <div className="skills-card">
+                <span className="corner-bracket corner-tl"></span>
+                <span className="corner-bracket corner-tr"></span>
+                <span className="corner-bracket corner-bl"></span>
+                <span className="corner-bracket corner-br"></span>
+
+                <div className="skills-row">
+                    {/* Frameworks / Front-end languages */}
+                    <div className="skills-category">
+                        <h3 className="category-title category-cyan">Frontend</h3>
+                        <div className="category-tiles">
+                            <div className="skill-tile">
+                                <span className="skill-icon"><ANGULAR/></span>
+                                <span className="skill-label">Angular</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><REACT/></span>
+                                <span className="skill-label">React</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><HTML5/></span>
+                                <span className="skill-label">HTML5</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><CSS/></span>
+                                <span className="skill-label">CSS</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><JAVASCRIPT/></span>
+                                <span className="skill-label">Javascript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row-divider"></div>
+
+                    {/* Backend / Databases / APIs (languages) */}
+                    <div className="skills-category">
+                        <h3 className="category-title category-pink">Languages</h3>
+                        <div className="category-tiles">
+                            <div className="skill-tile">
+                                <span className="skill-icon"><PYTHON/></span>
+                                <span className="skill-label">Python</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><Cplusplus/></span>
+                                <span className="skill-label">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="skills-divider"></div>
+
+                <div className="skills-row">
+                    {/* Development / Deployment Tools */}
+                    <div className="skills-category">
+                        <h3 className="category-title category-cyan">Backend</h3>
+                        <div className="category-tiles">
+                            <div className="skill-tile">
+                                <span className="skill-icon"><REST/></span>
+                                <span className="skill-label">REST API</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><MAVEN/></span>
+                                <span className="skill-label">Maven</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><TOMCAT/></span>
+                                <span className="skill-label">Tomcat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row-divider"></div>
+
+                    <div className="skills-category">
+                        <h3 className="category-title category-pink">Databases</h3>
+                        <div className="category-tiles">
+                            <div className="skill-tile">
+                                <span className="skill-icon"><ORACLE/></span>
+                                <span className="skill-label">Database</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><SQL/></span>
+                                <span className="skill-label">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="skills-divider"></div>
+
+                <div className="skills-row">
+                    {/* Version Control */}
+                    <div className="skills-category skills-category-full">
+                        <h3 className="category-title category-cyan">Tools &amp; Version Control</h3>
+                        <div className="category-tiles">
+                            <div className="skill-tile">
+                                <span className="skill-icon"><GIT/></span>
+                                <span className="skill-label">Git</span>
+                            </div>
+                            <div className="skill-tile">
+                                <span className="skill-icon"><GITGIT/></span>
+                                <span className="skill-label">Github</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </>
     );

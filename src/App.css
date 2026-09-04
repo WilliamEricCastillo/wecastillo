@@ -1,7 +1,8 @@
 body {
   background-color: #000000;
-  background-image: url('plain-black-background.jpg');
-  background-size: cover;
+  background-image: url('Background.png');
+  background-size: 600px;
+  background-repeat: repeat;
   background-attachment: fixed;
   color: white;
 }
@@ -18,6 +19,54 @@ body {
   font-family: verdana, serif;
   font-size: 4em;
   font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.intro-name-frame {
+  position: relative;
+  display: inline-block;
+  padding: 0.3em 1.6em;
+  border-radius: 4px;
+  background: rgba(10, 12, 16, 0.5);
+}
+
+.corner-bracket {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+}
+
+.corner-tl {
+  top: -3px;
+  left: -3px;
+  border-top: 3px solid #22d3ee;
+  border-left: 3px solid #22d3ee;
+  box-shadow: -2px -2px 8px rgba(34, 211, 238, 0.4);
+}
+
+.corner-tr {
+  top: -3px;
+  right: -3px;
+  border-top: 3px solid #ec4899;
+  border-right: 3px solid #ec4899;
+  box-shadow: 2px -2px 8px rgba(236, 72, 153, 0.4);
+}
+
+.corner-bl {
+  bottom: -3px;
+  left: -3px;
+  border-bottom: 3px solid #22d3ee;
+  border-left: 3px solid #22d3ee;
+  box-shadow: -2px 2px 8px rgba(34, 211, 238, 0.4);
+}
+
+.corner-br {
+  bottom: -3px;
+  right: -3px;
+  border-bottom: 3px solid #ec4899;
+  border-right: 3px solid #ec4899;
+  box-shadow: 2px 2px 8px rgba(236, 72, 153, 0.4);
 }
 
 .grid-app {
@@ -27,6 +76,15 @@ body {
   padding-top: 10em;
 }
 
+@media (max-width: 700px) {
+  .name-grid {
+    font-size: 2em;
+  }
+
+  .birth-name {
+    padding-right: 12px;
+  }
+}
 
 
 

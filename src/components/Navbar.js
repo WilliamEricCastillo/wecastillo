@@ -4,6 +4,7 @@ import { ReactComponent as Github } from "./github-mark.svg";
 import { ReactComponent as Linkedin } from "./linkedin.svg";
 import { ReactComponent as Resume } from "./resume-icon.svg";
 import { ReactComponent as Envelope } from "./email.svg";
+import { FaHome, FaCode, FaBriefcase, FaRocket, FaEnvelope, FaUser, FaChevronRight } from "react-icons/fa";
 
 
 import './navbar.css'
@@ -17,6 +18,8 @@ const Navbar = ({ scrollToSection }) => {
 
     return (
         <nav className="navbar">
+            <span className="navbar-bracket navbar-bracket-tl"></span>
+            <span className="navbar-bracket navbar-bracket-tr"></span>
 
             <div className="container">
 
@@ -62,30 +65,67 @@ const Navbar = ({ scrollToSection }) => {
                 </div>
 
                 <div className={`nav-elements  ${showNavbar && 'active'}`}>
+                    <span className="nav-corner nav-corner-tl"></span>
+                    <span className="nav-corner nav-corner-tr"></span>
+                    <span className="nav-corner nav-corner-bl"></span>
+                    <span className="nav-corner nav-corner-br"></span>
+
                     <ul>
                         <li>
-                            <div onClick={() => scrollToSection("home")} className="link">Home</div>
+                            <div onClick={() => scrollToSection("home")} className="link">
+                                <span className="nav-icon i-cyan"><FaHome/></span>
+                                <span className="nav-label">Home</span>
+                                <span className="nav-chevron"><FaChevronRight/></span>
+                            </div>
                         </li>
-                        <li>
-                            <div onClick={() => scrollToSection("skills")} className="link">Skills</div>
+                        <li className="nav-item-skills">
+                            <div onClick={() => scrollToSection("skills")} className="link">
+                                <span className="nav-icon i-cyan"><FaCode/></span>
+                                <span className="nav-label">Skills</span>
+                                <span className="nav-chevron"><FaChevronRight/></span>
+                            </div>
                         </li>
+                        {/* Projects link temporarily hidden
                         <li>
                             <div onClick={() => scrollToSection("projects")} className="link">Projects</div>
                         </li>
+                        */}
                         <li>
-                            <div onClick={() => scrollToSection("experience")} className="link">Experience</div>
+                            <div onClick={() => scrollToSection("experience")} className="link">
+                                <span className="nav-icon i-cyan"><FaBriefcase/></span>
+                                <span className="nav-label">Experience</span>
+                                <span className="nav-chevron"><FaChevronRight/></span>
+                            </div>
                         </li>
                         <li>
-                            <div onClick={() => scrollToSection("nasa")} className="link">Nasa</div>
+                            <div onClick={() => scrollToSection("nasa")} className="link">
+                                <span className="nav-icon i-purple"><FaRocket/></span>
+                                <span className="nav-label">Nasa</span>
+                                <span className="nav-chevron"><FaChevronRight/></span>
+                            </div>
                         </li>
 
                         <li>
-                            <div onClick={() => scrollToSection("contact")} className="link">Contact</div>
+                            <div onClick={() => scrollToSection("contact")} className="link">
+                                <span className="nav-icon i-pink"><FaEnvelope/></span>
+                                <span className="nav-label">Contact</span>
+                                <span className="nav-chevron"><FaChevronRight/></span>
+                            </div>
                         </li>
                         <li>
-                            <div onClick={() => scrollToSection("about")} className="link">About</div>
+                            <div onClick={() => scrollToSection("about")} className="link">
+                                <span className="nav-icon i-pink"><FaUser/></span>
+                                <span className="nav-label">About</span>
+                                <span className="nav-chevron"><FaChevronRight/></span>
+                            </div>
                         </li>
                     </ul>
+
+                    <div className="nav-footer">
+                        <span className="dot"></span>
+                        <span>System Navigation</span>
+                        <span className="dot pink"></span>
+                    </div>
                 </div>
             </div>
         </nav>
