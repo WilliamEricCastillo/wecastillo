@@ -78,7 +78,7 @@ function App() {
                     </div>
                 </div>
 
-                
+
                 <div className="app-col">
                     <div ref={home} className="home">
                         <Home/>
@@ -92,14 +92,14 @@ function App() {
                 </div>
 
                 <div className="app-col">
-                    <div ref={projects} className="projects">
-                        <Projects/>
+                    <div ref={experience} className="experience">
+                        <Experience/>
                     </div>
                 </div>
 
                 <div className="app-col">
-                    <div ref={experience} className="experience">
-                        <Experience/>
+                    <div ref={projects} className="projects">
+                        <Projects/>
                     </div>
                 </div>
 

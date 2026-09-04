@@ -9,11 +9,12 @@ function Home(){
 
                 <div className="col">
 
-                    <img id="gradpic" src="https://i.ibb.co/yY62RjG/Cropped-Image.png" alt="grad"></img>
-                    <h1>Masters of Science in Information Science</h1>
-                    <h4>Texas A&M International University '25</h4>
-                    <h1>Bachelor's of Arts in Computer Science</h1>
+                    <img id="gradpic" src="https://i.ibb.co/VpkhhpGg/photo-output-2.jpg" alt="grad"></img>
+                    <h1>Bachelor of Computer Science</h1>
                     <h4>Texas State University '23</h4>
+                    <h1>Master of Information Science</h1>
+                    <h4>Texas A&M International University '25</h4>
+
 
                 </div>
 
@@ -21,32 +22,25 @@ function Home(){
 
                 <div className="col">
                     <p className="introduction">
-                        <strong>Computer Science</strong> graduate specializing in <strong>front and back-end
-                        development</strong>.
-                        In addition, I have experience in <strong>database design</strong>, skills in developing <strong>RESTful APIs</strong>,
-                        expertise in <strong>Express</strong>, and proficiency in <strong>React</strong>.
-                        <br></br>
-                        <br></br>
-                       Currently pursuing a <strong>M.S. in Information Science</strong>, where I'm learning
-                        a wide spectrum of IT and business topics, including <strong>project management</strong>
-                        and <strong>business analytics</strong>.
-                        Upon the completion of my degree, I will be earning a <strong>certificate</strong> in <strong>data analytics</strong>,
-                        enhancing my capabilities to manipulate data and develop
-                        data-intensive applications.
-                        <br></br>
-                        <br></br>
-                        Lastly, I am proud to have been named to the <strong>Dean's List</strong> for the Spring 2023 semester, reflecting my
-                        commitment to academic excellence.
-                        <br></br>
-                        <br></br>
-                        Thank you for visiting, and I look forward to sharing my professional journey and future
-                        endeavors with you.
+                        I have a Bachelor’s degree in Computer Science and a Master’s degree in Information Science,
+                        with a strong foundation in front-end and back-end development and experience in the electric
+                        power industry. I have completed two internships at ERCOT, and I'm currently a GDP Analyst in the
+                        Grid and Market Solutions Development Program, where I am gaining hands-on exposure to ERCOT’s
+                        grid operations, market systems, and supporting technologies.
+                    </p>
+
+                    <p className="introduction">
+                        My technical background includes Angular and React for web development, along with Java, SQL,
+                        Oracle DB, and Power BI, with experience building data-driven applications and interactive dashboards.
                     </p>
                 </div>
 
+
             </div>
+
         </>
-    );
+    )
+        ;
 }
 
 export default Home;
