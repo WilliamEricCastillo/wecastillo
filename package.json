@@ -4,6 +4,7 @@
   "homepage": "https://williamericcastillo.github.io/wecastillo",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -14,7 +15,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.20.0",
-    "emailjs-com": "^3.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-ga": "^3.3.1",
