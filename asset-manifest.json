@@ -1,13 +1,11 @@
 {
   "files": {
-    "main.css": "/wecastillo/static/css/main.6798eac6.css",
-    "main.js": "/wecastillo/static/js/main.c0fa2818.js",
+    "main.css": "/wecastillo/static/css/main.650aa11b.css",
+    "main.js": "/wecastillo/static/js/main.ca82ba0e.js",
     "static/js/453.6c3cc0d9.chunk.js": "/wecastillo/static/js/453.6c3cc0d9.chunk.js",
-    "static/media/StarfieldSimulation.gif": "/wecastillo/static/media/StarfieldSimulation.d572de266902425992c3.gif",
+    "static/media/Background.png": "/wecastillo/static/media/Background.77f6b0dc65e09755b33a.png",
     "static/media/brand-icons.svg": "/wecastillo/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/wecastillo/static/media/icons.62d9dae4e0040e81c980.svg",
-    "static/media/plain-black-background.jpg": "/wecastillo/static/media/plain-black-background.7d76adb242949b1f5a18.jpg",
-    "static/media/neon-background.jpg": "/wecastillo/static/media/neon-background.265a5243837fafcca495.jpg",
     "static/media/outline-icons.svg": "/wecastillo/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
     "static/media/icons.eot": "/wecastillo/static/media/icons.a01e3f2d6c83dc3aee17.eot",
     "static/media/icons.ttf": "/wecastillo/static/media/icons.c656b8caa454ed19b9a2.ttf",
@@ -29,7 +27,6 @@
     "static/media/resume-icon.svg": "/wecastillo/static/media/resume-icon.a98538e403ed328e9dd6cb745a34afe6.svg",
     "static/media/cplusplus.svg": "/wecastillo/static/media/cplusplus.06f14ec409010a20c0b0cd916d5cc111.svg",
     "static/media/github.svg": "/wecastillo/static/media/github.fd4cd7d0a6a3dcbff12940b3a7f57895.svg",
-    "static/media/nodejs.svg": "/wecastillo/static/media/nodejs.c64ebd3ea9a9afeda9cec780e386523f.svg",
     "static/media/python.svg": "/wecastillo/static/media/python.9a2072f74fea602aeca0dd2e119d85c9.svg",
     "static/media/oracle.svg": "/wecastillo/static/media/oracle.e386b7b93c9edffa9e56df4fde0b38ec.svg",
     "static/media/SQL.svg": "/wecastillo/static/media/SQL.75ff73e4cf40f3c0635962e8f00853d5.svg",
@@ -43,12 +40,12 @@
     "index.html": "/wecastillo/index.html",
     "static/media/hamburger.svg": "/wecastillo/static/media/hamburger.3669f421c2e82ede2ee3172f0b450273.svg",
     "static/media/javascript.svg": "/wecastillo/static/media/javascript.43976d9fce9148457a6eef9bf7cb28d1.svg",
-    "main.6798eac6.css.map": "/wecastillo/static/css/main.6798eac6.css.map",
-    "main.c0fa2818.js.map": "/wecastillo/static/js/main.c0fa2818.js.map",
+    "main.650aa11b.css.map": "/wecastillo/static/css/main.650aa11b.css.map",
+    "main.ca82ba0e.js.map": "/wecastillo/static/js/main.ca82ba0e.js.map",
     "453.6c3cc0d9.chunk.js.map": "/wecastillo/static/js/453.6c3cc0d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6798eac6.css",
-    "static/js/main.c0fa2818.js"
+    "static/css/main.650aa11b.css",
+    "static/js/main.ca82ba0e.js"
   ]
 }
