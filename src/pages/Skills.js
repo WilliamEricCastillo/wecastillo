@@ -5,7 +5,6 @@ import { ReactComponent as GIT } from "../icons/git.svg";
 import { ReactComponent as GITGIT } from "../icons/github.svg";
 import { ReactComponent as HTML5 } from "../icons/html5.svg";
 // import { ReactComponent as MYSQL } from "../icons/mysql.svg";
-import { ReactComponent as NODEJS } from "../icons/nodejs.svg";
 import { ReactComponent as ORACLE } from "../icons/oracle.svg";
 import { ReactComponent as PYTHON } from "../icons/python.svg";
 import { ReactComponent as REACT } from "../icons/react.svg";
