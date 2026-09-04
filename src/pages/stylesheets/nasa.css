@@ -34,6 +34,7 @@
     width: 100%;
     max-width: 50em;
     margin: 0 auto;
+    box-sizing: border-box;
     border-radius: 12px;
     background: linear-gradient(180deg, rgba(16, 18, 24, 0.92), rgba(6, 7, 10, 0.96));
     border: 1px solid rgba(140, 160, 180, 0.15);

@@ -74,6 +74,33 @@ body {
   box-shadow: 2px 2px 8px rgba(236, 72, 153, 0.4);
 }
 
+@media (max-width: 600px) {
+  .corner-bracket {
+    width: 16px;
+    height: 16px;
+  }
+
+  .corner-tl {
+    top: 2px;
+    left: 2px;
+  }
+
+  .corner-tr {
+    top: 2px;
+    right: 2px;
+  }
+
+  .corner-bl {
+    bottom: 2px;
+    left: 2px;
+  }
+
+  .corner-br {
+    bottom: 2px;
+    right: 2px;
+  }
+}
+
 .grid-app {
   display: flex;
   flex-direction: column;
