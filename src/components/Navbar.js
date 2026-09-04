@@ -16,6 +16,13 @@ const Navbar = ({ scrollToSection }) => {
         setShowNavbar(!showNavbar)
     }
 
+    const onKeyActivate = (callback) => (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            callback();
+        }
+    }
+
     return (
         <nav className="navbar">
             <span className="navbar-bracket navbar-bracket-tl"></span>
@@ -72,14 +79,14 @@ const Navbar = ({ scrollToSection }) => {
 
                     <ul>
                         <li>
-                            <div onClick={() => scrollToSection("home")} className="link">
+                            <div onClick={() => scrollToSection("home")} onKeyDown={onKeyActivate(() => scrollToSection("home"))} tabIndex={0} role="button" className="link">
                                 <span className="nav-icon i-cyan"><FaHome/></span>
                                 <span className="nav-label">Home</span>
                                 <span className="nav-chevron"><FaChevronRight/></span>
                             </div>
                         </li>
                         <li className="nav-item-skills">
-                            <div onClick={() => scrollToSection("skills")} className="link">
+                            <div onClick={() => scrollToSection("skills")} onKeyDown={onKeyActivate(() => scrollToSection("skills"))} tabIndex={0} role="button" className="link">
                                 <span className="nav-icon i-cyan"><FaCode/></span>
                                 <span className="nav-label">Skills</span>
                                 <span className="nav-chevron"><FaChevronRight/></span>
@@ -91,14 +98,14 @@ const Navbar = ({ scrollToSection }) => {
                         </li>
                         */}
                         <li>
-                            <div onClick={() => scrollToSection("experience")} className="link">
+                            <div onClick={() => scrollToSection("experience")} onKeyDown={onKeyActivate(() => scrollToSection("experience"))} tabIndex={0} role="button" className="link">
                                 <span className="nav-icon i-cyan"><FaBriefcase/></span>
                                 <span className="nav-label">Experience</span>
                                 <span className="nav-chevron"><FaChevronRight/></span>
                             </div>
                         </li>
                         <li>
-                            <div onClick={() => scrollToSection("nasa")} className="link">
+                            <div onClick={() => scrollToSection("nasa")} onKeyDown={onKeyActivate(() => scrollToSection("nasa"))} tabIndex={0} role="button" className="link">
                                 <span className="nav-icon i-purple"><FaRocket/></span>
                                 <span className="nav-label">Nasa</span>
                                 <span className="nav-chevron"><FaChevronRight/></span>
@@ -106,14 +113,14 @@ const Navbar = ({ scrollToSection }) => {
                         </li>
 
                         <li>
-                            <div onClick={() => scrollToSection("contact")} className="link">
+                            <div onClick={() => scrollToSection("contact")} onKeyDown={onKeyActivate(() => scrollToSection("contact"))} tabIndex={0} role="button" className="link">
                                 <span className="nav-icon i-pink"><FaEnvelope/></span>
                                 <span className="nav-label">Contact</span>
                                 <span className="nav-chevron"><FaChevronRight/></span>
                             </div>
                         </li>
                         <li>
-                            <div onClick={() => scrollToSection("about")} className="link">
+                            <div onClick={() => scrollToSection("about")} onKeyDown={onKeyActivate(() => scrollToSection("about"))} tabIndex={0} role="button" className="link">
                                 <span className="nav-icon i-pink"><FaUser/></span>
                                 <span className="nav-label">About</span>
                                 <span className="nav-chevron"><FaChevronRight/></span>

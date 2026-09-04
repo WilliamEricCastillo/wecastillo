@@ -131,6 +131,11 @@ label {
     transform: translateY(-2px);
 }
 
+.custom-button:focus-visible {
+    outline: 2px solid #22d3ee;
+    outline-offset: 3px;
+}
+
 .contact-info-strip {
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +170,16 @@ label {
     border-color: #22d3ee;
     box-shadow: 0 0 12px rgba(34, 211, 238, 0.25);
     color: #67e8f9;
+}
+
+.contact-info-item:focus-visible {
+    outline: 2px solid #22d3ee;
+    outline-offset: 2px;
+}
+
+.custom-form-field .ui.input > input:focus-visible,
+.custom-form-field textarea:focus-visible {
+    outline: none;
 }
 
 @media (max-width: 700px) {

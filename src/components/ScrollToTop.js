@@ -26,6 +26,15 @@ const ScrollToTop = () => {
                 <FaAngleDoubleUp
                     className="top-btn-position top-btn-style"
                     onClick={scrollTop}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            scrollTop();
+                        }
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="Scroll to top"
                 />
             )}
         </div>
