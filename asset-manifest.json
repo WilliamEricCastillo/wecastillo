@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wecastillo/static/css/main.a58f8a6a.css",
+    "main.css": "/wecastillo/static/css/main.59e9b90d.css",
     "main.js": "/wecastillo/static/js/main.80a75adc.js",
     "static/js/453.6c3cc0d9.chunk.js": "/wecastillo/static/js/453.6c3cc0d9.chunk.js",
     "static/media/Background.png": "/wecastillo/static/media/Background.77f6b0dc65e09755b33a.png",
@@ -40,12 +40,12 @@
     "index.html": "/wecastillo/index.html",
     "static/media/hamburger.svg": "/wecastillo/static/media/hamburger.3669f421c2e82ede2ee3172f0b450273.svg",
     "static/media/javascript.svg": "/wecastillo/static/media/javascript.43976d9fce9148457a6eef9bf7cb28d1.svg",
-    "main.a58f8a6a.css.map": "/wecastillo/static/css/main.a58f8a6a.css.map",
+    "main.59e9b90d.css.map": "/wecastillo/static/css/main.59e9b90d.css.map",
     "main.80a75adc.js.map": "/wecastillo/static/js/main.80a75adc.js.map",
     "453.6c3cc0d9.chunk.js.map": "/wecastillo/static/js/453.6c3cc0d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a58f8a6a.css",
+    "static/css/main.59e9b90d.css",
     "static/js/main.80a75adc.js"
   ]
 }
