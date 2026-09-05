@@ -9,6 +9,20 @@ import { FaHome, FaCode, FaBriefcase, FaRocket, FaEnvelope, FaUser, FaChevronRig
 
 import './navbar.css'
 
+const trackSocialClick = (platform) => {
+    const eventArguments = ["event", "nav_social_click", {
+        platform,
+        location: "top_left_nav",
+    }];
+
+    if (typeof window.gtag === "function") {
+        window.gtag(...eventArguments);
+    } else {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(eventArguments);
+    }
+};
+
 const Navbar = ({ scrollToSection }) => {
     const [showNavbar, setShowNavbar] = useState(false);
 
@@ -35,6 +49,7 @@ const Navbar = ({ scrollToSection }) => {
                     <div className="socials" id="github">
                         <a href="https://github.com/WilliamEricCastillo?tab=repositories"
                            title="Github"
+                                    onClick={() => trackSocialClick("github")}
                            target="_blank"
                            rel="noopener noreferrer">
                             <Github/>
@@ -44,6 +59,7 @@ const Navbar = ({ scrollToSection }) => {
                     <div className="socials" id="linkedin">
                         <a href="https://www.linkedin.com/in/williamecastillo/"
                            title="Linkedin"
+                                    onClick={() => trackSocialClick("linkedin")}
                            target="_blank"
                            rel="noopener noreferrer">
                             <Linkedin/>
@@ -53,6 +69,7 @@ const Navbar = ({ scrollToSection }) => {
                     <div className="socials" id="Resume">
                         <a href="https://docs.google.com/document/d/13-kOm3dyOPNBZ3FI1ioMLuBrUgIsUcJt/edit?usp=sharing&ouid=108401301805898358230&rtpof=true&sd=true"
                            title="View Resume"
+                                    onClick={() => trackSocialClick("resume")}
                            target="_blank"
                            rel="noopener noreferrer">
                             <Resume />
@@ -61,7 +78,8 @@ const Navbar = ({ scrollToSection }) => {
 
                     <div className="socials" id="email">
                         <a href="mailto:williamecastillo@gmail.com"
-                           title="Email">
+                                    title="Email"
+                                    onClick={() => trackSocialClick("email")}>
                             <Envelope />
                         </a>
                     </div>

@@ -31,11 +31,11 @@ function App() {
 
         script.onload = () => {
             window.dataLayer = window.dataLayer || [];
-            function gtag() {
+            window.gtag = function gtag() {
                 window.dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "G-1CW04CVSEM");
+            };
+            window.gtag("js", new Date());
+            window.gtag("config", "G-1CW04CVSEM");
         };
 
         // Clean up script tag on component unmount
