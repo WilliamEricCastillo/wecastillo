@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
@@ -20,29 +20,6 @@ function App() {
     const nasa = useRef(null);
     const contact = useRef(null);
     const about = useRef(null);
-
-
-    useEffect(() => {
-        // Load Google Analytics script asynchronously when the component mounts
-        const script = document.createElement("script");
-        script.async = true;
-        script.src = "https://www.googletagmanager.com/gtag/js?id=G-1CW04CVSEM";
-        document.head.appendChild(script);
-
-        script.onload = () => {
-            window.dataLayer = window.dataLayer || [];
-            window.gtag = function gtag() {
-                window.dataLayer.push(arguments);
-            };
-            window.gtag("js", new Date());
-            window.gtag("config", "G-1CW04CVSEM");
-        };
-
-        // Clean up script tag on component unmount
-        return () => {
-            document.head.removeChild(script);
-        };
-    }, []);
 
     const scrollToSection = (elementId) => {
         const elementRef = {
